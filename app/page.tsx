@@ -6,10 +6,11 @@ import Playground from "./components/playground";
 import { useState } from "react";
 
 export default function Home() {
-  const [preview, setPreview] = useState<any>(null);
+  const [preview, setPreview] = useState<null | JSX.Element>(null);
+  const [theme, setTheme] = useState<"light" | "dark">("light");
 
   return (
-    <div>
+    <div className={`${theme}`}>
       <div className="fixed top-0 left-0 -z-10 w-full h-full">
         {preview ? preview : null}
       </div>
@@ -45,10 +46,10 @@ export default function Home() {
           <div className="relative mx-auto flex max-w-2xl flex-col items-center">
             <div className="mb-8 flex">
               <span className="relative inline-block overflow-hidden rounded-full p-[1px]">
-                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#171717_0%,#737373_50%,#171717_100%)]" />
-                <div className="inline-flex h-full w-full cursor-pointer justify-center rounded-full bg-white px-3 py-1 text-xs font-medium leading-5 text-slate-600 backdrop-blur-3xl">
+                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#a9a9a9_0%,#0c0c0c_50%,#a9a9a9_100%)] dark:bg-[conic-gradient(from_90deg_at_50%_50%,#171717_0%,#737373_50%,#171717_100%)]" />
+                <div className="inline-flex h-full w-full cursor-pointer justify-center rounded-full bg-white px-3 py-1 text-xs font-medium leading-5 text-slate-600 backdrop-blur-xl dark:text-slate-200 dark:bg-black">
                   New snippets ⚡️
-                  <span className="inline-flex items-center pl-2 text-black">
+                  <span className="inline-flex items-center pl-2 text-black dark:text-white">
                     Read more{" "}
                     <ArrowRight className="pl-0.5 text-black" size={16} />
                   </span>
@@ -57,14 +58,13 @@ export default function Home() {
             </div>
             <h2 className="text-center text-3xl font-medium text-gray-900 sm:text-6xl dark:text-gray-50">
               Collection of modern,{" "}
-              <span className="leading-tight inline-flex animate-text-gradient bg-gradient-to-r from-neutral-900 via-slate-500 to-neutral-500 bg-[200%_auto] bg-clip-text text-transparent">
+              <span className="leading-tight inline-flex animate-text-gradient bg-gradient-to-r from-neutral-900 via-slate-500 to-neutral-500 bg-[200%_auto] bg-clip-text text-transparent dark:from-neutral-100 dark:via-slate-400 dark:to-neutral-400">
                 background snippets
               </span>
             </h2>
-            <p className="mt-6 text-center text-lg leading-6 text-gray-600">
+            <p className="mt-6 text-center text-lg leading-6 text-gray-600 dark:text-gray-200">
               Easy to use, copy and paste background snippets for your next
-              project. All snippets are built with Vanilla CSS and Tailwind CSS
-              and are production-ready.
+              project. All snippets are built with Vanilla CSS and Tailwind CSS.
             </p>
             <div className="mt-10 flex gap-4">
               <Button>Get Started</Button>
@@ -72,12 +72,17 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="overflow-hidden py-32 px-10">
-          <div className="grid grid-cols-2 gap-4 pb-4">
+        <div className="overflow-hidden pt-52 px-10 pb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pb-6">
             {BACKGROUND_OPTIONS.map((background, index) => {
               return (
-                <Playground key={index} setPreview={setPreview}>
-                  {background}
+                <Playground
+                  key={index}
+                  setPreview={setPreview}
+                  theme={background.theme}
+                  setTheme={setTheme}
+                >
+                  {background.component}
                 </Playground>
               );
             })}

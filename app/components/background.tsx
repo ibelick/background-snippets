@@ -101,17 +101,64 @@ const Background13 = () => {
 };
 
 export const BACKGROUND_OPTIONS = [
-  <Background1 key={1} />,
-  // <Background2 key={2} />,
-  <Background3 key={3} />,
-  <Background4 key={4} />,
-  <Background5 key={5} />,
-  <Background6 key={6} />,
-  <Background7 key={7} />,
-  <Background8 key={8} />,
-  <Background9 key={9} />,
-  <Background10 key={10} />,
-  <Background11 key={11} />,
-  <Background12 key={12} />,
-  <Background13 key={13} />,
-];
+  {
+    name: "Background 1",
+    component: <Background1 />,
+    theme: "light",
+  },
+  {
+    name: "Background 3",
+    component: <Background3 />,
+    theme: "light",
+  },
+  {
+    name: "Background 4",
+    component: <Background4 />,
+    theme: "light",
+  },
+  {
+    name: "Background 6",
+    component: <Background6 />,
+    theme: "light",
+  },
+  {
+    name: "Background 7",
+    component: <Background7 />,
+    theme: "light",
+  },
+  {
+    name: "Background 9",
+    component: <Background9 />,
+    theme: "light",
+  },
+  {
+    name: "Background 10",
+    component: <Background10 />,
+    theme: "light",
+  },
+  {
+    name: "Background 11",
+    component: <Background11 />,
+    theme: "light",
+  },
+  {
+    name: "Background 12",
+    component: <Background12 />,
+    theme: "light",
+  },
+  {
+    name: "Background 13",
+    component: <Background13 />,
+    theme: "dark",
+  },
+  {
+    name: "Background 5",
+    component: <Background5 />,
+    theme: "dark",
+  },
+  {
+    name: "Background 8",
+    component: <Background8 />,
+    theme: "dark",
+  },
+] as const
