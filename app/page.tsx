@@ -6,7 +6,7 @@ import Playground from "./components/playground";
 import { useState } from "react";
 
 export default function Home() {
-  const [preview, setPreview] = useState<null | JSX.Element>(null);
+  const [preview, setPreview] = useState<null | React.ReactNode>(null);
   const [theme, setTheme] = useState<"light" | "dark">("light");
 
   return (
