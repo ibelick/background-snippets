@@ -1,5 +1,3 @@
-import { CSSProperties } from "react";
-
 const Background1 = () => {
   return (
     <div className="bg-white absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]" />
@@ -161,4 +159,4 @@ export const BACKGROUND_OPTIONS = [
     component: <Background8 />,
     theme: "dark",
   },
-] as const
+] as const;
