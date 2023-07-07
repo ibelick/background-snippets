@@ -4,27 +4,11 @@ const Background1 = () => {
   );
 };
 
-// @todo: need to work on this
 const Background2 = () => {
   return (
-    <div
-      className="bg-white absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"
-      style={
-        {
-          boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
-        } as React.CSSProperties
-      }
-      // style={
-      //   {
-      //     "--mask-offset": "50px",
-      //     mask: "linear-gradient(to bottom,transparent,#fff var(--mask-offset) calc(100% - var(--mask-offset)),transparent),linear-gradient(to right,transparent,#fff var(--mask-offset) calc(100% - var(--mask-offset)),transparent)",
-      //     "-webkit-mask":
-      //       "linear-gradient(to bottom,transparent,#fff var(--mask-offset) calc(100% - var(--mask-offset)),transparent),linear-gradient(to right,transparent,#fff var(--mask-offset) calc(100% - var(--mask-offset)),transparent)",
-      //     "mask-composite": "intersect",
-      //     "-webkit-mask-composite": "source-in, xor",
-      //   } as CSSProperties
-      // }
-    />
+    <div className="bg-white absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
+      <div className="absolute top-0 left-0 right-0 bottom-0 bg-[radial-gradient(circle_800px_at_100%_200px,#d5c5ff,transparent)]" />
+    </div>
   );
 };
 
@@ -98,10 +82,41 @@ const Background13 = () => {
   );
 };
 
+// grainy
+/* <img
+  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E"
+  alt="grainy"
+  className="absolute inset-0 w-full h-full opacity-10 object-cover"
+/> */
+
+const Background14 = () => {
+  return (
+    <div
+      className={`relative bg-neutral-900 h-full w-full
+    `}
+    >
+      <div className="absolute inset-0 bg-fuchsia-400 opacity-20 blur-[100px] bg-[size:20px_20px]"></div>
+    </div>
+  );
+};
+
+const Background15 = () => {
+  return (
+    <div className="bg-white absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
+      <div className="absolute top-0 left-0 right-0 bottom-0 bg-[radial-gradient(circle_500px_at_50%_200px,#C9EBFF,transparent)]" />
+    </div>
+  );
+};
+
 export const BACKGROUND_OPTIONS = [
   {
     name: "Background 1",
     component: <Background1 />,
+    theme: "light",
+  },
+  {
+    name: "Background 2",
+    component: <Background2 />,
     theme: "light",
   },
   {
@@ -117,6 +132,11 @@ export const BACKGROUND_OPTIONS = [
   {
     name: "Background 6",
     component: <Background6 />,
+    theme: "light",
+  },
+  {
+    name: "Background 2",
+    component: <Background15 />,
     theme: "light",
   },
   {
@@ -157,6 +177,11 @@ export const BACKGROUND_OPTIONS = [
   {
     name: "Background 8",
     component: <Background8 />,
+    theme: "dark",
+  },
+  {
+    name: "Background 14",
+    component: <Background14 />,
     theme: "dark",
   },
 ] as const;

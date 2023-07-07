@@ -10,6 +10,11 @@ export default function Home() {
   const [preview, setPreview] = useState<null | React.ReactNode>(null);
   const [theme, setTheme] = useState<"light" | "dark">("light");
 
+  const resetBg = () => {
+    setPreview(null);
+    setTheme("light");
+  };
+
   return (
     <>
       {/* @todo: maybe toast top right and go top button on bottom right */}
@@ -68,12 +73,23 @@ export default function Home() {
               </h2>
               <p className="mt-6 text-center text-lg leading-6 text-gray-600 dark:text-gray-200">
                 Easy to use, copy and paste background snippets for your next
-                project. All snippets are built with Vanilla CSS and Tailwind
-                CSS.
+                project. All snippets are built with Tailwind CSS and{" "}
+                <span className="opacity-70 cursor-wait">Vanilla CSS</span>
               </p>
               <div className="mt-10 flex gap-4">
-                <Button>Get Started</Button>
-                <Button variant="secondary">Learn More</Button>
+                <a
+                  href="https://github.com/ibelick/background-snippets"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center"
+                >
+                  <Button>
+                    Go to GitHub <ArrowRight className="pl-0.5" size={16} />
+                  </Button>{" "}
+                </a>
+                <Button variant="secondary" onClick={resetBg}>
+                  Reset background
+                </Button>
               </div>
             </div>
           </div>
@@ -93,6 +109,21 @@ export default function Home() {
               })}
             </div>
           </div>
+          <footer>
+            <div className="flex items-center justify-center py-8">
+              <span className="text-sm text-neutral-800 dark:text-neutral-200">
+                Made by
+                <a
+                  href="https://twitter.com/Ibelick"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ml-1 text-neutral-950 dark:text-neutral-100"
+                >
+                  @Ibelick
+                </a>
+              </span>
+            </div>
+          </footer>
         </div>
       </div>
     </>
