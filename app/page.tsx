@@ -72,9 +72,10 @@ export default function Home() {
                 </span>
               </h2>
               <p className="mt-6 text-center text-lg leading-6 text-gray-600 dark:text-gray-200">
-                Easy to use, copy and paste background snippets for your next
-                project. All snippets are built with Tailwind CSS and{" "}
-                <span className="opacity-70 cursor-wait">Vanilla CSS</span>
+                Ready-to-use, simply copy and paste into your next project. All
+                snippets crafted with Tailwind CSS and{" "}
+                <span className="opacity-70 cursor-wait">Vanilla CSS</span> for
+                easy integration.
               </p>
               <div className="mt-10 flex gap-4">
                 <a

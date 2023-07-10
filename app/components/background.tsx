@@ -91,10 +91,7 @@ const Background13 = () => {
 
 const Background14 = () => {
   return (
-    <div
-      className={`relative bg-neutral-900 h-full w-full
-    `}
-    >
+    <div className="relative bg-neutral-900 h-full w-full">
       <div className="absolute inset-0 bg-fuchsia-400 opacity-20 blur-[100px] bg-[size:20px_20px]"></div>
     </div>
   );
@@ -104,6 +101,23 @@ const Background15 = () => {
   return (
     <div className="bg-white absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
       <div className="absolute top-0 left-0 right-0 bottom-0 bg-[radial-gradient(circle_500px_at_50%_200px,#C9EBFF,transparent)]" />
+    </div>
+  );
+};
+
+const Background16 = () => {
+  return (
+    <div className="relative bg-slate-950 h-full w-full">
+      <div className="absolute top-0 left-0 right-0 bottom-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]" />
+    </div>
+  );
+};
+
+const Background17 = () => {
+  return (
+    <div className="relative bg-slate-950 h-full w-full">
+      <div className="absolute top-[-10%] left-[-20%] rounded-full right-0 w-[500px] h-[500px] bottom-0 bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]" />
+      <div className="absolute top-[-10%] right-[-20%] rounded-full w-[500px] h-[500px] bottom-0 bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]" />
     </div>
   );
 };
@@ -182,6 +196,16 @@ export const BACKGROUND_OPTIONS = [
   {
     name: "Background 14",
     component: <Background14 />,
+    theme: "dark",
+  },
+  {
+    name: "Background 16",
+    component: <Background16 />,
+    theme: "dark",
+  },
+  {
+    name: "Background 17",
+    component: <Background17 />,
     theme: "dark",
   },
 ] as const;
