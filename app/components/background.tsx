@@ -6,7 +6,17 @@ const Background1 = () => {
 
 const Background18 = () => {
   return (
-    <div className="bg-white absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]" />
+    <div className="relative bg-white h-full w-full">
+      <div className="absolute h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]" />
+    </div>
+  );
+};
+
+const Background22 = () => {
+  return (
+    <div className="relative bg-white h-full w-full">
+      <div className="absolute top-0 left-0 right-0 bottom-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)] " />
+    </div>
   );
 };
 
@@ -88,13 +98,6 @@ const Background13 = () => {
   );
 };
 
-// grainy
-/* <img
-  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E"
-  alt="grainy"
-  className="absolute inset-0 w-full h-full opacity-10 object-cover"
-/> */
-
 const Background14 = () => {
   return (
     <div className="relative bg-neutral-900 h-full w-full">
@@ -141,6 +144,14 @@ const Background20 = () => {
     <div className="relative bg-black h-full w-full">
       <div className="absolute top-0 left-0 right-0 bottom-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]" />
       <div className="absolute top-[-10%] left-[-20%] rounded-full right-0 w-[1000px] h-[1000px] bg-[radial-gradient(circle_400px_at_30%_300px,#fbfbfb36,#000)]" />
+    </div>
+  );
+};
+
+const Background21 = () => {
+  return (
+    <div className="relative bg-slate-950 h-full w-full">
+      <div className="absolute top-0 left-0 right-0 bottom-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
     </div>
   );
 };
@@ -197,6 +208,11 @@ export const BACKGROUND_OPTIONS = [
     theme: "light",
   },
   {
+    name: "Background 22",
+    component: <Background22 />,
+    theme: "light",
+  },
+  {
     name: "Background 11",
     component: <Background11 />,
     theme: "light",
@@ -244,6 +260,11 @@ export const BACKGROUND_OPTIONS = [
   {
     name: "Background 20",
     component: <Background20 />,
+    theme: "dark",
+  },
+  {
+    name: "Background 21",
+    component: <Background21 />,
     theme: "dark",
   },
 ] as const;
