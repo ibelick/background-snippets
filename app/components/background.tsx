@@ -4,6 +4,12 @@ const Background1 = () => {
   );
 };
 
+const Background18 = () => {
+  return (
+    <div className="bg-white absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]" />
+  );
+};
+
 const Background2 = () => {
   return (
     <div className="bg-white absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
@@ -59,7 +65,7 @@ const Background9 = () => {
 const Background10 = () => {
   return (
     <div className="bg-white absolute top-0 -z-10 h-full w-full">
-      <div className="absolute bottom-auto left-auto right-0 top-0 !h-[500px] !w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px]" />
+      <div className="absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px]" />
     </div>
   );
 };
@@ -122,10 +128,32 @@ const Background17 = () => {
   );
 };
 
+const Background19 = () => {
+  return (
+    <div className="relative bg-slate-950 h-full w-full">
+      <div className="absolute top-0 left-0 right-0 bottom-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]" />
+    </div>
+  );
+};
+
+const Background20 = () => {
+  return (
+    <div className="relative bg-black h-full w-full">
+      <div className="absolute top-0 left-0 right-0 bottom-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]" />
+      <div className="absolute top-[-10%] left-[-20%] rounded-full right-0 w-[1000px] h-[1000px] bg-[radial-gradient(circle_400px_at_30%_300px,#fbfbfb36,#000)]" />
+    </div>
+  );
+};
+
 export const BACKGROUND_OPTIONS = [
   {
     name: "Background 1",
     component: <Background1 />,
+    theme: "light",
+  },
+  {
+    name: "Background 18",
+    component: <Background18 />,
     theme: "light",
   },
   {
@@ -206,6 +234,16 @@ export const BACKGROUND_OPTIONS = [
   {
     name: "Background 17",
     component: <Background17 />,
+    theme: "dark",
+  },
+  {
+    name: "Background 19",
+    component: <Background19 />,
+    theme: "dark",
+  },
+  {
+    name: "Background 20",
+    component: <Background20 />,
     theme: "dark",
   },
 ] as const;
