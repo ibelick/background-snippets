@@ -1,10 +1,10 @@
-const Background1 = () => {
+const BgLightGrid1 = () => {
   return (
     <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]" />
   );
 };
 
-const Background18 = () => {
+const BgLightGrid2 = () => {
   return (
     <div className="relative h-full w-full bg-white">
       <div className="absolute h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]" />
@@ -12,7 +12,7 @@ const Background18 = () => {
   );
 };
 
-const Background22 = () => {
+const BgLightGrid5 = () => {
   return (
     <div className="relative h-full w-full bg-white">
       <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
@@ -20,7 +20,7 @@ const Background22 = () => {
   );
 };
 
-const Background2 = () => {
+const BgLightGradient1 = () => {
   return (
     <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
       <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_800px_at_100%_200px,#d5c5ff,transparent)]" />
@@ -28,13 +28,13 @@ const Background2 = () => {
   );
 };
 
-const Background3 = () => {
+const BgLightGrid3 = () => {
   return (
     <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]" />
   );
 };
 
-const Background4 = () => {
+const BgLightGridGradient1 = () => {
   return (
     <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
       <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-fuchsia-400 opacity-20 blur-[100px]" />
@@ -42,37 +42,37 @@ const Background4 = () => {
   );
 };
 
-const Background5 = () => {
+const BgDarkGradient1 = () => {
   return (
     <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]" />
   );
 };
 
-const Background6 = () => {
+const BgLightGrid4 = () => {
   return (
     <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]" />
   );
 };
 
-const Background7 = () => {
+const BgLightGradient2 = () => {
   return (
     <div className="absolute top-0 z-[-2] h-screen w-screen rotate-180 transform bg-white bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(252,205,238,.5)_100%)]" />
   );
 };
 
-const Background8 = () => {
+const BgDarkGradient2 = () => {
   return (
     <div className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
   );
 };
 
-const Background9 = () => {
+const BgLightGradient3 = () => {
   return (
     <div className="absolute top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)]" />
   );
 };
 
-const Background10 = () => {
+const BgLightGradient4 = () => {
   return (
     <div className="absolute top-0 -z-10 h-full w-full bg-white">
       <div className="absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px]" />
@@ -80,25 +80,25 @@ const Background10 = () => {
   );
 };
 
-const Background11 = () => {
+const BgLightGradient5 = () => {
   return (
     <div className="absolute top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
   );
 };
 
-const Background12 = () => {
+const BgLightGradient6 = () => {
   return (
     <div className="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)]" />
   );
 };
 
-const Background13 = () => {
+const BgDarkGrid1 = () => {
   return (
-    <div className="absolute top-0 z-[-2] h-screen w-screen bg-[#011440] bg-[radial-gradient(#ffffff33_1px,#011440_1px)] bg-[size:20px_20px]" />
+    <div className="absolute top-0 z-[-2] h-screen w-screen bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]" />
   );
 };
 
-const Background14 = () => {
+const BgDarkGradient3 = () => {
   return (
     <div className="relative h-full w-full bg-neutral-900">
       <div className="absolute inset-0 bg-fuchsia-400 bg-[size:20px_20px] opacity-20 blur-[100px]"></div>
@@ -106,7 +106,7 @@ const Background14 = () => {
   );
 };
 
-const Background15 = () => {
+const BgLightGridGradient2 = () => {
   return (
     <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
       <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#C9EBFF,transparent)]" />
@@ -114,7 +114,7 @@ const Background15 = () => {
   );
 };
 
-const Background16 = () => {
+const BgDarkGradient4 = () => {
   return (
     <div className="relative h-full w-full bg-slate-950">
       <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]" />
@@ -122,7 +122,7 @@ const Background16 = () => {
   );
 };
 
-const Background17 = () => {
+const BgDarkGradient5 = () => {
   return (
     <div className="relative h-full w-full bg-slate-950">
       <div className="absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]" />
@@ -131,7 +131,7 @@ const Background17 = () => {
   );
 };
 
-const Background19 = () => {
+const BgDarkGrid2 = () => {
   return (
     <div className="relative h-full w-full bg-slate-950">
       <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]" />
@@ -139,7 +139,7 @@ const Background19 = () => {
   );
 };
 
-const Background20 = () => {
+const BgDarkGridGradient1 = () => {
   return (
     <div className="relative h-full w-full bg-black">
       <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]" />
@@ -148,7 +148,7 @@ const Background20 = () => {
   );
 };
 
-const Background21 = () => {
+const BgDarkGrid3 = () => {
   return (
     <div className="relative h-full w-full bg-slate-950">
       <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
@@ -158,113 +158,113 @@ const Background21 = () => {
 
 export const BACKGROUND_OPTIONS = [
   {
-    name: 'Background 1',
-    component: <Background1 />,
+    name: 'Background Light Gradient 1',
+    component: <BgLightGradient1 />,
     theme: 'light',
   },
   {
-    name: 'Background 18',
-    component: <Background18 />,
+    name: 'Background Light Gradient 2',
+    component: <BgLightGradient2 />,
     theme: 'light',
   },
   {
-    name: 'Background 2',
-    component: <Background2 />,
+    name: 'Background Light Gradient 3',
+    component: <BgLightGradient3 />,
     theme: 'light',
   },
   {
-    name: 'Background 3',
-    component: <Background3 />,
+    name: 'Background Light Gradient 4',
+    component: <BgLightGradient4 />,
     theme: 'light',
   },
   {
-    name: 'Background 4',
-    component: <Background4 />,
+    name: 'Background Light Gradient 5',
+    component: <BgLightGradient5 />,
     theme: 'light',
   },
   {
-    name: 'Background 6',
-    component: <Background6 />,
+    name: 'Background Light Gradient 6',
+    component: <BgLightGradient6 />,
     theme: 'light',
   },
   {
-    name: 'Background 2',
-    component: <Background15 />,
+    name: 'Background Light Grid Gradient 1',
+    component: <BgLightGridGradient1 />,
     theme: 'light',
   },
   {
-    name: 'Background 7',
-    component: <Background7 />,
+    name: 'Background Light Grid Gradient 2',
+    component: <BgLightGridGradient2 />,
     theme: 'light',
   },
   {
-    name: 'Background 9',
-    component: <Background9 />,
+    name: 'Background Light Grid ',
+    component: <BgLightGrid1 />,
     theme: 'light',
   },
   {
-    name: 'Background 10',
-    component: <Background10 />,
+    name: 'Background Light Grid 2',
+    component: <BgLightGrid2 />,
     theme: 'light',
   },
   {
-    name: 'Background 22',
-    component: <Background22 />,
+    name: 'Background Light Grid 3',
+    component: <BgLightGrid3 />,
     theme: 'light',
   },
   {
-    name: 'Background 11',
-    component: <Background11 />,
+    name: 'Background Light Grid 4',
+    component: <BgLightGrid4 />,
     theme: 'light',
   },
   {
-    name: 'Background 12',
-    component: <Background12 />,
+    name: 'Background Light Grid 5',
+    component: <BgLightGrid5 />,
     theme: 'light',
   },
   {
-    name: 'Background 13',
-    component: <Background13 />,
+    name: 'Background Dark Gradient',
+    component: <BgDarkGradient1 />,
     theme: 'dark',
   },
   {
-    name: 'Background 5',
-    component: <Background5 />,
+    name: 'Background Dark Gradient 2',
+    component: <BgDarkGradient2 />,
     theme: 'dark',
   },
   {
-    name: 'Background 8',
-    component: <Background8 />,
+    name: 'Background Dark Gradient 3',
+    component: <BgDarkGradient3 />,
     theme: 'dark',
   },
   {
-    name: 'Background 14',
-    component: <Background14 />,
+    name: 'Background Dark Gradient 4',
+    component: <BgDarkGradient4 />,
     theme: 'dark',
   },
   {
-    name: 'Background 16',
-    component: <Background16 />,
+    name: 'Background Dark Gradient 5',
+    component: <BgDarkGradient5 />,
     theme: 'dark',
   },
   {
-    name: 'Background 17',
-    component: <Background17 />,
+    name: 'Background Dark Grid Gradient 1',
+    component: <BgDarkGridGradient1 />,
     theme: 'dark',
   },
   {
-    name: 'Background 19',
-    component: <Background19 />,
+    name: 'Background Dark Grid 1',
+    component: <BgDarkGrid1 />,
     theme: 'dark',
   },
   {
-    name: 'Background 20',
-    component: <Background20 />,
+    name: 'Background Dark Grid 2',
+    component: <BgDarkGrid2 />,
     theme: 'dark',
   },
   {
-    name: 'Background 21',
-    component: <Background21 />,
+    name: 'Background Dark Grid 3',
+    component: <BgDarkGrid3 />,
     theme: 'dark',
   },
 ] as const;
