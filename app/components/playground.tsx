@@ -17,9 +17,11 @@ const Playground: React.FC<PlaygroundProps> = ({
 }) => {
   const copyCode = () => {
     const code = ReactDOMServer.renderToString(children);
+    const prefix = '<div class="fixed left-0 top-0 -z-10 h-full w-full">'
+    const postfix = '</div>'
+    navigator.clipboard.writeText(prefix + code + postfix);
+    toast.success('Copied to clipboard. Paste code at root of you web app to see the background effect.');
 
-    navigator.clipboard.writeText(code);
-    toast.success('Copied to clipboard');
   };
 
   return (
