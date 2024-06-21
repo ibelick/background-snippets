@@ -20,7 +20,6 @@ type PlaygroundProps = {
 enum Technology {
   HTML = 'html',
   REACT = 'react',
-  VUE = 'vue',
 }
 
 const Playground: React.FC<PlaygroundProps> = ({
@@ -100,14 +99,6 @@ const Playground: React.FC<PlaygroundProps> = ({
                   }}
                 >
                   react
-                </DropdownMenuItem>
-                <DropdownMenuItem
-                  className={itemClasses}
-                  onClick={() => {
-                    copyCode(Technology.VUE);
-                  }}
-                >
-                  vue
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
