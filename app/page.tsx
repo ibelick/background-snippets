@@ -49,7 +49,7 @@ export default function Home() {
                 />
               </a>
               <a
-                href="https://github.com/mk016"
+                href="https://github.com/ibelick/background-snippets"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex"
@@ -75,7 +75,7 @@ export default function Home() {
             <div className="relative mx-auto flex max-w-2xl flex-col items-center">
               <div className="mb-8 flex">
                 <a
-                  href="https://github.com/mk016"
+                  href="https://github.com/ibelick/background-snippets"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex"
@@ -109,7 +109,7 @@ export default function Home() {
               </p>
               <div className="mt-10 flex gap-4">
                 <a
-                  href="https://github.com/mk016"
+                  href="https://github.com/ibelick/background-snippets"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center"
