@@ -22,6 +22,12 @@ export const metadata = {
       },
     ],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'BG.IBELICK - Ready-to-Use Background Snippets',
+    description: 'Modern background snippets for web developers crafted with Tailwind CSS and Vanilla CSS.',
+    image: '/banner.jpg',
+  },
 };
 
 export default function RootLayout({
@@ -37,14 +43,22 @@ export default function RootLayout({
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
+        
+        {/* Open Graph Metadata */}
         <meta property="og:title" content={metadata.openGraph.title} />
         <meta property="og:description" content={metadata.openGraph.description} />
-        {/* <meta property="og:url" content={metadata.openGraph.url} /> */}
+        <meta property="og:url" content={metadata.openGraph.url} />
         <meta property="og:type" content={metadata.openGraph.type} />
         <meta property="og:image" content={metadata.openGraph.images[0].url} />
-        {/* <meta property="og:image:alt" content={metadata.openGraph.images[0].alt} /> */}
-        {/* <meta property="og:image:width" content={metadata.openGraph.images[0].width.toString()} /> */}
-        {/* <meta property="og:image:height" content={metadata.openGraph.images[0].height.toString()} /> */}
+        <meta property="og:image:alt" content={metadata.openGraph.images[0].alt} />
+        <meta property="og:image:width" content={metadata.openGraph.images[0].width.toString()} />
+        <meta property="og:image:height" content={metadata.openGraph.images[0].height.toString()} />
+
+        {/* Twitter Card Metadata */}
+        <meta name="twitter:card" content={metadata.twitter.card} />
+        <meta name="twitter:title" content={metadata.twitter.title} />
+        <meta name="twitter:description" content={metadata.twitter.description} />
+        <meta name="twitter:image" content={metadata.twitter.image} />
       </head>
       {!isDev ? (
         <Script
