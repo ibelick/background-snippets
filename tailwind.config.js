@@ -65,10 +65,21 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 },
         },
+        shoot: {
+          "0%": { transform: "translateX(-150%) translateY(-150%) rotate(-45deg)", opacity: 1 },
+          "80%": { opacity: 1 },
+          "100%": { transform: "translateX(150%) translateY(150%) rotate(-45deg)", opacity: 0 },
+        },
+        zoom: {
+          "0%": { transform: "scale(1)" },
+          "100%": { transform: "scale(1.5)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        shoot: "shoot 3s ease-in-out infinite",
+        zoom: "zoom 10s linear infinite",
       },
     },
   },
