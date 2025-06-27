@@ -1,3 +1,50 @@
+// Modern Glassmorphism Light BG
+const BgGlassmorphismLight = () => {
+  return (
+    <div className="absolute inset-0 -z-10 h-full w-full bg-gradient-to-br from-white via-blue-100 to-purple-100">
+      <div className="absolute left-1/4 top-1/4 h-80 w-80 rounded-3xl bg-white/40 shadow-2xl backdrop-blur-2xl border border-white/30" />
+      <div className="absolute right-1/4 bottom-1/4 h-60 w-60 rounded-full bg-purple-200/40 blur-2xl" />
+    </div>
+  );
+};
+
+// Abstract Shapes Light BG
+const BgAbstractShapesLight = () => {
+  return (
+    <div className="absolute inset-0 -z-10 h-full w-full bg-gradient-to-tr from-pink-50 via-blue-50 to-yellow-50">
+      <svg className="absolute left-10 top-10 opacity-30" width="200" height="200">
+        <circle cx="100" cy="100" r="80" fill="#a5b4fc" />
+      </svg>
+      <svg className="absolute right-10 bottom-10 opacity-20" width="180" height="180">
+        <rect width="180" height="180" rx="40" fill="#fbcfe8" />
+      </svg>
+    </div>
+  );
+};
+
+// Modern Glassmorphism Dark BG
+const BgGlassmorphismDark = () => {
+  return (
+    <div className="absolute inset-0 -z-10 h-full w-full bg-gradient-to-br from-neutral-900 via-indigo-950 to-fuchsia-950">
+      <div className="absolute left-1/4 top-1/4 h-80 w-80 rounded-3xl bg-white/10 shadow-2xl backdrop-blur-2xl border border-white/10" />
+      <div className="absolute right-1/4 bottom-1/4 h-60 w-60 rounded-full bg-fuchsia-900/40 blur-2xl" />
+    </div>
+  );
+};
+
+// Abstract Shapes Dark BG
+const BgAbstractShapesDark = () => {
+  return (
+    <div className="absolute inset-0 -z-10 h-full w-full bg-gradient-to-tr from-neutral-900 via-indigo-950 to-fuchsia-950">
+      <svg className="absolute left-10 top-10 opacity-20" width="200" height="200">
+        <circle cx="100" cy="100" r="80" fill="#818cf8" />
+      </svg>
+      <svg className="absolute right-10 bottom-10 opacity-10" width="180" height="180">
+        <rect width="180" height="180" rx="40" fill="#f472b6" />
+      </svg>
+    </div>
+  );
+};
 const BgLightGrid1 = () => {
   return (
     <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]" />
@@ -158,6 +205,16 @@ const BgDarkGrid3 = () => {
 
 export const BACKGROUND_OPTIONS = [
   {
+    name: 'Glassmorphism Light',
+    component: <BgGlassmorphismLight />,
+    theme: 'light',
+  },
+  {
+    name: 'Abstract Shapes Light',
+    component: <BgAbstractShapesLight />,
+    theme: 'light',
+  },
+  {
     name: 'Background Light Gradient 1',
     component: <BgLightGradient1 />,
     theme: 'light',
@@ -225,6 +282,16 @@ export const BACKGROUND_OPTIONS = [
   {
     name: 'Background Dark Gradient',
     component: <BgDarkGradient1 />,
+    theme: 'dark',
+  },
+  {
+    name: 'Glassmorphism Dark',
+    component: <BgGlassmorphismDark />,
+    theme: 'dark',
+  },
+  {
+    name: 'Abstract Shapes Dark',
+    component: <BgAbstractShapesDark />,
     theme: 'dark',
   },
   {
